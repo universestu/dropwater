@@ -53,6 +53,7 @@ public class GameScreen implements Screen {
         bucket.width = 64;
         bucket.height = 64;
 
+
         // สร้าง array เม็ดฝน และเริ่มโปรยเม็ดฝนเม็ดแรก
         raindrops = new Array<Rectangle>();
         spawnRaindrop();
@@ -91,6 +92,10 @@ public class GameScreen implements Screen {
             game.batch.draw(dropImage, raindrop.x, raindrop.y);
         }
         game.batch.end();
+
+        //Animation spriteHuman = new Animation();
+        //spriteHuman.create();
+       // spriteHuman.render();
 
         // เช็คว่า มีการคลิกเมาท์หรือแตะหน้าจอหรือไม่
         if (Gdx.input.isTouched()) {
